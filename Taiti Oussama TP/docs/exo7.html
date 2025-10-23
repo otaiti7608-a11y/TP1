@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo7</title>
+</head>
+<body>
+     <fieldset>
+         <legend>Identité</legend>
+        <form action="" method="post">
+                     <tr>
+            <label for="M1">Nom</label>
+            <input type="text" name="nom" id="M1" required>
+        </tr>
+        <tr>
+            <label for="M2">Prenom</label>
+            <td><input type="text" name="prenom" id="M2" required></td>
+        </tr>
+                    <tr>
+                        <td><label for="DDN">Date de naissance</label></td>
+                        <td><input type="date" id="DDN" min="1900-01-01" max="2025-10-21" required></td>
+                    </tr>   
+        </form>
+    </table>
+     </fieldset>
+     <fieldset>
+        <legend>Contact</legend>
+        <table></table>
+        <form action="" method="post">
+            <tr>
+                <td><label for="N1">Téléphone</label></td>
+                <td><input type="tel" id="N1" title="numero commence par 06 ou 07,suivi de 8 nombres" required  pattern="^0[5-7]\d{8}$"></td>
+            </tr>
+            <tr>
+                <td><label for="url1">Site perso</label></td>
+                <td><input type="url" id="url1" name="Site perso"></td>
+            </tr>
+        </form>
+        </table>
+     </fieldset>
+     <fieldset>
+        <legend>Sécurité</legend>
+        <table>
+            <form action="" method="post">
+            <tr>
+                <td><label for="Passe">Mot de passe</label></td>
+                <td><input type="password" id="Passe" name="password" minlength="8"></td>
+            </tr>
+            <tr>
+                <td><label for="confirm">Confirmation de mot de passe</label></td>
+                <td><input type="password" id="confirm" required minlength="8"></td>
+            </tr>
+            </form>
+        </table>
+     </fieldset>
+     <fieldset>
+        <legend>Préférences</legend>
+        <table>
+            <form action="" method="post">
+                <tr>
+                    <td><label for="Choice1">Newsletter</label></td>
+                    <td><input type="checkbox" id="Choice1" name="Choice1" value="Newsletter"></td>
+                </tr>
+                <tr>
+                    <td>Rôle</td>
+                    <td>
+                                <input type="radio" id="Choice2" name="Étudiant">
+                                <label for="Choice2">Étudiant</label>
+                                <input type="radio" id="Choice2" name="Pro">
+                                <label for="Choice2">Pro</label>               
+                    </td>
+                </tr>
+            </form>
+        </table>
+     </fieldset>
+      <tr>
+            <td><input type="submit" name="submit"></td>
+         </tr>
+</body>
+</html>
